@@ -1,2 +1,38 @@
-
-  This is the contents of body
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Tim's Tales </title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/home.css">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class='page'>
+    <div class = 'fixedHead'>
+      {{>header}}
+      {{>navbar}}
+    </div>
+      <div class = 'homeBody'>
+        <div class = 'featuredPost'>
+          {{>featuredpost}}
+        </div>
+        <div class = 'posts'>
+         {{#each data}}
+            <div class='post'>
+              <img class = 'postImage' src="{{img_prim}}">
+              <h3> {{title}} </h3>
+              <p>{{blurb}}</p>
+            </div>
+          {{/each}}
+        </div>
+        <div class = "footer">
+          {{>footer}}
+        </div> 
+      </div>
+      
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* main */
+body{
+  height: 100%;
+  width: 100%;
+  color: black;
+  font-family: 'Playfair Display', serif;
+  border: 0px;
+  margin: 0px;
+}
+
+.page{
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  height: 100%;
+}
+
+*{
+  border:0;
+  margin:0;
+  padding:0;
+  line-height: 1;
+}
+
+.homeBody{
+  display: flex;
+  flex: auto;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+
+
+/* header */
+.fixedHead{
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+#title{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.navBar{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+}
+
+.nav{
+  margin-right: 5px;
+  margin-left: 5px;
+  flex:1;
+  text-align: center;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-self: center;
+}
+
+.nav:hover{
+  color:white;
+  background-color: lightgray;
+}
+
+
+/* footer */
+.footer{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.foot{
+  color: black;
+  flex: 1;
+  text-align: center;
+  font-size: 10px;
+  padding:5px;
+}
+
+.footerLink{
+  text-decoration: none;
+}
+
+
+
+/* featured  */
+.featuredPost{
+  max-width: 80%;
+  padding-top:72px;
+  display: flex; 
+  flex-direction: column;
+  margin: 2px;
+  align-self: center;
+}
+
+.featuredImage{
+  max-width: 100%;
+}
+
+.featuredTitle{
+  margin: 2px;
+ 
+}
+
+.featuredBlurb{
+  margin:2px; 
+  font-size: 12px;
+}
+
+/* posts */
+.posts{
+    justify-content: space-around;
+    display: flex;
+    align-self: center;
+    max-width: 80%;
+    margin: 2px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.post{
+  max-width: 250px;
+  height:280px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  text-overflow: ellipsis;
+}
+
+.postImage{
+  width:250px;
+  height:250px;
+  object-fit:cover;
+}
+
+p{
+  font-size: 12px;
+}
+
+h3{
+  font-size: 15px;
+}
